@@ -44,7 +44,7 @@
 		  </executions>
 		  <configuration>
 		    <includePluginDependencies>true</includePluginDependencies>
-			<mainClass>helloWorld.HelloWorldWorkflow.GreeterMain</mainClass>
+			<mainClass>helloWorld.HelloWorldWorkflowAsync.GreeterMain</mainClass>
 			<arguments>
 				<argument>configFile</argument>
 				<argument>properties</argument>
