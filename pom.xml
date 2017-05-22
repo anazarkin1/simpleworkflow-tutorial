@@ -44,12 +44,25 @@
 		  </executions>
 		  <configuration>
 		    <includePluginDependencies>true</includePluginDependencies>
-			<mainClass>helloWorld.HelloWorldWorkflowAsync.GreeterMain</mainClass>
+			<mainClass>helloWorld.HelloWorldWorkflowDistributed.GreeterMain</mainClass>
 			<arguments>
 				<argument>configFile</argument>
 				<argument>properties</argument>
 			</arguments>
 
+		  </configuration>
+		</plugin>
+		 <plugin>
+		  <artifactId>maven-assembly-plugin</artifactId>
+		  <configuration>
+			<archive>
+			  <manifest>
+				<mainClass>helloWorld.HelloWorldWorkflowDistributed.GreeterActivitiesWorker</mainClass>
+			  </manifest>
+			</archive>
+			<descriptorRefs>
+			  <descriptorRef>jar-with-dependencies</descriptorRef>
+			</descriptorRefs>
 		  </configuration>
 		</plugin>
 	</plugins>
