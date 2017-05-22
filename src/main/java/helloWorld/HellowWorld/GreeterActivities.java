@@ -1,3 +1,4 @@
+package helloWorld.HellowWorld;
 public interface GreeterActivities{
 	public String getName();
 	public String getGreeting(String name);
